@@ -14,13 +14,17 @@ SCREEN_WIDTH = 400
 SCREEN_HEIGHT = 600
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
+background = pygame.image.load("/Users/nicolaslong/flappy-bird/flappy bird backgground.jpeg")
+
 
 pygame.display.set_caption("Flappy Bird")
 
-# Charger l'arrière-planbackground = pygame.image.load("/Users/nicolaslong/training/flappy bird backgground.jpeg")
+# Charger l'arrière-planbackground = 
+ 
+pygame.image.load("/Users/nicolaslong/flappy-bird/flappy bird backgground.jpeg")
 
 # Charger l'image de l'oiseau
-bird_img = pygame.image.load("Flappy-Bird-PNG-File.png")
+bird_img = pygame.image.load("/Users/nicolaslong/flappy-bird/Flappy-Bird-PNG-File.png")
 bird_img = pygame.transform.scale(bird_img, (50, 50))  # Redimensionner l'image de l'oiseau à une taille de 50x50 pixels
 
 # Charger la police pour afficher le score
@@ -80,7 +84,7 @@ class Pipe:
 
 pipes = []
 SPAWNPIPE = pygame.USEREVENT
-pygame.time.set_timer(SPAWNPIPE, 1500)  # Modifier la fréquence d'apparition des tuyaux
+pygame.time.set_timer(SPAWNPIPE, 1700)  # Modifier la fréquence d'apparition des tuyaux
 
 running = True
 
